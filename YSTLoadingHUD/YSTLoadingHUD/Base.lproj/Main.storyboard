@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sG4-KY-kDo">
+                                <rect key="frame" x="87" y="90" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="KHO-Ms-fhs"/>
+                                </constraints>
+                                <state key="normal" title="菊花转动加载过程">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UUY-HO-kJN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHT-jE-xWR">
+                                <rect key="frame" x="87" y="180" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="加载成功">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fPy-d4-874"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vi9-XV-0dr">
+                                <rect key="frame" x="87" y="270" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.55024673800154578" green="0.5836840290065175" blue="0.83418017625808716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="加载失败">
+                                    <color key="titleColor" red="0.83418017625808716" green="0.7974456091382216" blue="0.71175812259045079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4s-hM-7Vf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ks-15-JVL">
+                                <rect key="frame" x="87" y="360" width="200" height="30"/>
+                                <color key="backgroundColor" red="0.80318237541418491" green="0.27938060086837685" blue="0.83418017625808716" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="提示警告框">
+                                    <color key="titleColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="show:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Oo-o1-tnb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vi9-XV-0dr" firstAttribute="width" secondItem="kHT-jE-xWR" secondAttribute="width" id="9wO-NR-sIl"/>
+                            <constraint firstItem="1ks-15-JVL" firstAttribute="width" secondItem="vi9-XV-0dr" secondAttribute="width" id="HXt-QJ-XDZ"/>
+                            <constraint firstItem="kHT-jE-xWR" firstAttribute="width" secondItem="sG4-KY-kDo" secondAttribute="width" id="InJ-w1-5ki"/>
+                            <constraint firstItem="sG4-KY-kDo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LN2-qk-MWv"/>
+                            <constraint firstItem="vi9-XV-0dr" firstAttribute="centerX" secondItem="kHT-jE-xWR" secondAttribute="centerX" id="NuF-c3-1P5"/>
+                            <constraint firstItem="kHT-jE-xWR" firstAttribute="centerX" secondItem="sG4-KY-kDo" secondAttribute="centerX" id="PXf-N0-H6G"/>
+                            <constraint firstItem="kHT-jE-xWR" firstAttribute="top" secondItem="sG4-KY-kDo" secondAttribute="bottom" constant="60" id="R45-4x-DE7"/>
+                            <constraint firstItem="1ks-15-JVL" firstAttribute="top" secondItem="vi9-XV-0dr" secondAttribute="bottom" constant="60" id="Y1h-E4-tjH"/>
+                            <constraint firstItem="sG4-KY-kDo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="70" id="YS4-Hy-dpI"/>
+                            <constraint firstItem="1ks-15-JVL" firstAttribute="centerX" secondItem="vi9-XV-0dr" secondAttribute="centerX" id="c6L-76-yio"/>
+                            <constraint firstItem="vi9-XV-0dr" firstAttribute="top" secondItem="kHT-jE-xWR" secondAttribute="bottom" constant="60" id="rXb-XU-b4Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
