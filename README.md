@@ -6,13 +6,11 @@
 
 ### Introduction
 1. 设置提示框的样式</br>
-···
-/**
+  /**
  设置中间焦点视图的样式
 
  @param type 样式类型
  */
 + (void) setCenterViewMaskType:(YSTCenterProgressViewStyle) type;
-···
 
 
