@@ -15,11 +15,11 @@
 		78E74DB31EC2B274002DCDE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DB11EC2B274002DCDE2 /* LaunchScreen.storyboard */; };
 		78E74DBE1EC2B274002DCDE2 /* YSTLoadingHUDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74DBD1EC2B274002DCDE2 /* YSTLoadingHUDTests.m */; };
 		78E74DC91EC2B274002DCDE2 /* YSTLoadingHUDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74DC81EC2B274002DCDE2 /* YSTLoadingHUDUITests.m */; };
-		78E74DDF1EC2B58E002DCDE2 /* 失败-hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DD81EC2B58E002DCDE2 /* 失败-hotel.png */; };
-		78E74DE01EC2B58E002DCDE2 /* 成功-hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DD91EC2B58E002DCDE2 /* 成功-hotel.png */; };
-		78E74DE11EC2B58E002DCDE2 /* 警告-hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DDA1EC2B58E002DCDE2 /* 警告-hotel.png */; };
 		78E74DE21EC2B58E002DCDE2 /* YSTCenterProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74DDC1EC2B58E002DCDE2 /* YSTCenterProgressView.m */; };
 		78E74DE31EC2B58E002DCDE2 /* YSTLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 78E74DDE1EC2B58E002DCDE2 /* YSTLoadingHUD.m */; };
+		78E74DE71EC2BB4F002DCDE2 /* 成功.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DE41EC2BB4F002DCDE2 /* 成功.png */; };
+		78E74DE81EC2BB4F002DCDE2 /* 警告.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DE51EC2BB4F002DCDE2 /* 警告.png */; };
+		78E74DE91EC2BB4F002DCDE2 /* 失败.png in Resources */ = {isa = PBXBuildFile; fileRef = 78E74DE61EC2BB4F002DCDE2 /* 失败.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,13 +56,13 @@
 		78E74DC41EC2B274002DCDE2 /* YSTLoadingHUDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YSTLoadingHUDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E74DC81EC2B274002DCDE2 /* YSTLoadingHUDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YSTLoadingHUDUITests.m; sourceTree = "<group>"; };
 		78E74DCA1EC2B274002DCDE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		78E74DD81EC2B58E002DCDE2 /* 失败-hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "失败-hotel.png"; sourceTree = "<group>"; };
-		78E74DD91EC2B58E002DCDE2 /* 成功-hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "成功-hotel.png"; sourceTree = "<group>"; };
-		78E74DDA1EC2B58E002DCDE2 /* 警告-hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "警告-hotel.png"; sourceTree = "<group>"; };
 		78E74DDB1EC2B58E002DCDE2 /* YSTCenterProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTCenterProgressView.h; sourceTree = "<group>"; };
 		78E74DDC1EC2B58E002DCDE2 /* YSTCenterProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTCenterProgressView.m; sourceTree = "<group>"; };
 		78E74DDD1EC2B58E002DCDE2 /* YSTLoadingHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YSTLoadingHUD.h; sourceTree = "<group>"; };
 		78E74DDE1EC2B58E002DCDE2 /* YSTLoadingHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YSTLoadingHUD.m; sourceTree = "<group>"; };
+		78E74DE41EC2BB4F002DCDE2 /* 成功.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "成功.png"; sourceTree = "<group>"; };
+		78E74DE51EC2BB4F002DCDE2 /* 警告.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "警告.png"; sourceTree = "<group>"; };
+		78E74DE61EC2BB4F002DCDE2 /* 失败.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "失败.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,9 +168,9 @@
 		78E74DD71EC2B58E002DCDE2 /* resource */ = {
 			isa = PBXGroup;
 			children = (
-				78E74DD81EC2B58E002DCDE2 /* 失败-hotel.png */,
-				78E74DD91EC2B58E002DCDE2 /* 成功-hotel.png */,
-				78E74DDA1EC2B58E002DCDE2 /* 警告-hotel.png */,
+				78E74DE41EC2BB4F002DCDE2 /* 成功.png */,
+				78E74DE51EC2BB4F002DCDE2 /* 警告.png */,
+				78E74DE61EC2BB4F002DCDE2 /* 失败.png */,
 			);
 			path = resource;
 			sourceTree = "<group>";
@@ -281,11 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78E74DE81EC2BB4F002DCDE2 /* 警告.png in Resources */,
+				78E74DE71EC2BB4F002DCDE2 /* 成功.png in Resources */,
 				78E74DB31EC2B274002DCDE2 /* LaunchScreen.storyboard in Resources */,
+				78E74DE91EC2BB4F002DCDE2 /* 失败.png in Resources */,
 				78E74DB01EC2B274002DCDE2 /* Assets.xcassets in Resources */,
-				78E74DE11EC2B58E002DCDE2 /* 警告-hotel.png in Resources */,
-				78E74DDF1EC2B58E002DCDE2 /* 失败-hotel.png in Resources */,
-				78E74DE01EC2B58E002DCDE2 /* 成功-hotel.png in Resources */,
 				78E74DAE1EC2B274002DCDE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -549,6 +549,7 @@
 				78E74DCF1EC2B274002DCDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78E74DD01EC2B274002DCDE2 /* Build configuration list for PBXNativeTarget "YSTLoadingHUDTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +558,7 @@
 				78E74DD21EC2B274002DCDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78E74DD31EC2B274002DCDE2 /* Build configuration list for PBXNativeTarget "YSTLoadingHUDUITests" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +567,7 @@
 				78E74DD51EC2B274002DCDE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

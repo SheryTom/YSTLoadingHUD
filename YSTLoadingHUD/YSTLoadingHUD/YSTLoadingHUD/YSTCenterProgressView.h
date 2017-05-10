@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-static NSString *kDefaultAlertImgName = @"警告-hotel";
-static NSString *kDefaultSuccessImgName = @"成功-hotel";
-static NSString *kDefaultFailureImgName = @"失败-hotel";
+
+static NSString *kDefaultAlertImgName = @"警告";
+static NSString *kDefaultSuccessImgName = @"成功";
+static NSString *kDefaultFailureImgName = @"失败";
 
 typedef NS_ENUM(NSUInteger, YSTLoadingIndicatorStyle) {
     YSTLoadingIndicatorStyle_Progress,
