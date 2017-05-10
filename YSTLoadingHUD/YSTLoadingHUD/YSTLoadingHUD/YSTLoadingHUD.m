@@ -11,7 +11,6 @@
 #define DefaultBackgroundColor [UIColor grayColor]
 #define Screen_Width [UIScreen mainScreen].bounds.size.width
 #define Screen_Height [UIScreen mainScreen].bounds.size.height
-#define Screen_Ratio Screen_Height/Screen_Width//屏幕高/宽
 
 @implementation YSTLoadingHUD
 
@@ -126,24 +125,6 @@
 + (void) setupSubViews{
     [[self sharedView] removeFromSuperview];
     [[self sharedView].centerView removeFromSuperview];
-    
-//    if (![self sharedView].superview) {
-//        NSArray *frontToBackWindows = [[UIApplication.sharedApplication.windows reverseObjectEnumerator] allObjects];
-//        for (UIWindow *itemWindow in frontToBackWindows) {
-//            BOOL windowOnMainScreen = itemWindow.screen == [UIScreen mainScreen];
-//            BOOL windowIsVisible = !itemWindow.hidden && itemWindow.alpha > 0;
-//            BOOL windowLevelNormal = itemWindow.windowLevel == UIWindowLevelNormal;
-//            if (windowOnMainScreen && windowIsVisible && windowLevelNormal) {
-//                [itemWindow addSubview:[self sharedView]];
-//                break;
-//            }
-//        }
-//    }else{
-//        [[self sharedView].superview bringSubviewToFront:[self sharedView]];
-//    }
-    
-//    [[[UIApplication sharedApplication] delegate].window addSubview:[self sharedView]];
-//    [[[UIApplication sharedApplication] delegate].window addSubview:[self sharedView].centerView];
     
     [[UIApplication sharedApplication].keyWindow addSubview:[self sharedView]];
     [[UIApplication sharedApplication].keyWindow addSubview:[self sharedView].centerView];
