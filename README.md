@@ -14,7 +14,6 @@
  */
 + (void) setCenterViewMaskType:(YSTCenterProgressViewStyle) type;
 </code></pre>
-
 <p>2.设置圆角半径大小:</p>
 <pre><code>
 /**
@@ -24,7 +23,6 @@
  */
 + (void) setCornerRadius:(CGFloat) radius;
 </code></pre>
-
 <p>3.设置成功图片:</p>
 <pre><code>
 /**
