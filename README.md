@@ -7,6 +7,7 @@
 ### Introduction
 <p>1.设置中间视图的样式:</p>
 <pre><code>
+lang:Objective-C
 /**
  设置中间焦点视图的样式
  @param type 样式类型
