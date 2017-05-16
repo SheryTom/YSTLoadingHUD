@@ -9,7 +9,6 @@
 <pre><code>
 /**
  设置中间焦点视图的样式
- 
  @param type 样式类型
  */
 + (void) setCenterViewMaskType:(YSTCenterProgressViewStyle) type;
@@ -18,7 +17,6 @@
 <pre><code>
 /**
  设置圆角大小
-
  @param radius 圆角半径
  */
 + (void) setCornerRadius:(CGFloat) radius;
@@ -27,7 +25,6 @@
 <pre><code>
 /**
  设置成功图片
-
  @param successImg 成功图片
  */
 + (void) setSuccessImg:(UIImage *) successImg;
