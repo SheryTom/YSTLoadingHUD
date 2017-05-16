@@ -22,19 +22,24 @@
 
 - (IBAction)show:(UIButton *)sender {
     YSTLoadingIndicatorStyle style = sender.tag;
+    //设置圆角半径
     [YSTLoadingHUD setCornerRadius:5];
     switch (style) {
         case YSTLoadingIndicatorStyle_Progress:
-            [YSTLoadingHUD showIndicatorWithStatus:@"加载中..."];
+            //带菊花转动的加载样式
+            [YSTLoadingHUD showIndicatorWithStatus:@"跳转支付中..."];
             break;
         case YSTLoadingIndicatorStyle_Success:
-            [YSTLoadingHUD showSuccessWithStatus:@"加载成功"];
+            //加载成功的样式
+            [YSTLoadingHUD showSuccessWithStatus:@"付款成功"];
             break;
         case YSTLoadingIndicatorStyle_Failure:
-            [YSTLoadingHUD showFailureWithStatus:@"加载失败"];
+            //加载失败的样式
+            [YSTLoadingHUD showFailureWithStatus:@"付款失败"];
             break;
         case YSTLoadingIndicatorStyle_Alert:
-            [YSTLoadingHUD showAlertWithStatus:@"请输入密码"];
+            //警告提示的样式
+            [YSTLoadingHUD showAlertWithStatus:@"无定位权限，请在设置中手动开启！"];
             break;
             
         default:

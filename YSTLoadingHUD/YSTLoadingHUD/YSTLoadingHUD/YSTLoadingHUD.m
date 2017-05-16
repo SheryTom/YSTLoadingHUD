@@ -151,7 +151,7 @@
 #pragma mark - 懒加载
 - (YSTCenterProgressView *)centerView{
     if (!_centerView) {
-        _centerView = [[YSTCenterProgressView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width * 2 / 5, 80) indicatorStyle:YSTLoadingIndicatorStyle_Default];
+        _centerView = [[YSTCenterProgressView alloc] initWithFrame:CGRectMake(0, 0, Screen_Width * 45 / 100, 80) indicatorStyle:YSTLoadingIndicatorStyle_Default];//0.4
         _centerView.center = self.center;
     }
     return _centerView;
