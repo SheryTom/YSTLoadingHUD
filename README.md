@@ -54,26 +54,26 @@
 <p>使用方法很简单，把文件导入到工程中，然后参照下面的用法就可以了。</p>
 <pre><code>
 //设置圆角半径
-    [YSTLoadingHUD setCornerRadius:5];
-    switch (style) {
-        case YSTLoadingIndicatorStyle_Progress:
-            //带菊花转动的加载样式
-            [YSTLoadingHUD showIndicatorWithStatus:@"跳转支付中..."];
-            break;
-        case YSTLoadingIndicatorStyle_Success:
-            //加载成功的样式
-            [YSTLoadingHUD showSuccessWithStatus:@"付款成功"];
-            break;
-        case YSTLoadingIndicatorStyle_Failure:
-            //加载失败的样式
-            [YSTLoadingHUD showFailureWithStatus:@"付款失败"];
-            break;
-        case YSTLoadingIndicatorStyle_Alert:
-            //警告提示的样式
-            [YSTLoadingHUD showAlertWithStatus:@"无定位权限，请在设置中手动开启！"];
-            break;
-            
-        default:
-            break;
-    }
+[YSTLoadingHUD setCornerRadius:5];
+switch (style) {
+    case YSTLoadingIndicatorStyle_Progress:
+        //带菊花转动的加载样式
+        [YSTLoadingHUD showIndicatorWithStatus:@"跳转支付中..."];
+        break;
+    case YSTLoadingIndicatorStyle_Success:
+        //加载成功的样式
+        [YSTLoadingHUD showSuccessWithStatus:@"付款成功"];
+        break;
+    case YSTLoadingIndicatorStyle_Failure:
+        //加载失败的样式
+        [YSTLoadingHUD showFailureWithStatus:@"付款失败"];
+        break;
+    case YSTLoadingIndicatorStyle_Alert:
+        //警告提示的样式
+        [YSTLoadingHUD showAlertWithStatus:@"无定位权限，请在设置中手动开启！"];
+        break;
+
+    default:
+        break;
+}
 </pre></code>
