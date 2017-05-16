@@ -72,7 +72,7 @@ switch (style) {
         //警告提示的样式
         [YSTLoadingHUD showAlertWithStatus:@"无定位权限，请在设置中手动开启！"];
         break;
-
+        
     default:
         break;
 }
