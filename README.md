@@ -5,10 +5,10 @@
 1. 添加资源文件、以及源码
 
 ### Introduction
-<p>设置中间视图的样式:</p>
-<pre><code>/**
+<p>1.设置中间视图的样式:</p>
+<pre><code>
+/**
  设置中间焦点视图的样式
-
  @param type 样式类型
  */
 + (void) setCenterViewMaskType:(YSTCenterProgressViewStyle) type;
