@@ -1,6 +1,6 @@
 # YSTLoadingHUD
-一个菊花转动的加载提示框，可以自定义。
-
+一个菊花转动的加载提示框，可以自定义。</br>
+![img](http://g.recordit.co/MWJkZqI1CA.gif)
 ### UpdateVersion 1.0
 1. 添加资源文件、以及源码
 
