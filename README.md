@@ -47,7 +47,11 @@
 + (void) showAlertWithStatus:(NSString *) status;
 ```
 ### Usage
-##### 使用方法很简单，把文件导入到工程中，然后参照下面的用法就可以了。
+##### 使用方法很简单
+```Objective-C
+#import "YSTLoadingHUD.h"
+```
+##### 然后参照下面的用法就可以了。
 ```Objective-C
 //设置圆角半径
 [YSTLoadingHUD setCornerRadius:5];
