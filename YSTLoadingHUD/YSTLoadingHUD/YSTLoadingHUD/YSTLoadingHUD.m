@@ -109,6 +109,8 @@
 + (void) reloadCenterView{
     NSString *value = [self sharedView].centerView.statusLabel.text;
     CGRect labelRect = [self sharedView].centerView.statusLabel.frame;
+    
+    //计算高度的
     CGFloat originalHeight = labelRect.size.height;
     CGSize textSize = [value boundingRectWithSize:CGSizeMake(labelRect.size.width, CGFLOAT_MAX)
                                           options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin
@@ -120,6 +122,24 @@
     CGRect centerViewRect = [self sharedView].centerView.frame;
     centerViewRect.size.height = centerViewRect.size.height + (labelRect.size.height - originalHeight);
     [self sharedView].centerView.frame = centerViewRect;
+    
+    //计算宽度
+//    CGFloat originalWidth = labelRect.size.width;
+//    CGRect labelRect_new = [self sharedView].centerView.statusLabel.frame;
+//    CGSize size_width = [value boundingRectWithSize:CGSizeMake(CGFLOAT_MAX, labelRect.size.height)
+//                                            options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin
+//                                         attributes:@{NSFontAttributeName:[self sharedView].centerView.statusLabel.font}
+//                                            context:nil].size;
+//    if (size_width.width >= Screen_Width * 65 / 100) {
+//        labelRect_new.size.width = Screen_Width * 65 / 100;
+//    }else if (size_width.width <= Screen_Width * 45 / 100){
+//        labelRect_new.size.width = Screen_Width * 45 / 100;
+//    }else{
+//        labelRect_new.size.width = size_width.width;
+//    }
+//    [self sharedView].centerView.statusLabel.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+//    [self sharedView].centerView.staticImgView.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
+//    [self sharedView].centerView.indicatorView.frame = CGRectMake(<#CGFloat x#>, <#CGFloat y#>, <#CGFloat width#>, <#CGFloat height#>);
 }
 
 + (void) setupSubViews{
