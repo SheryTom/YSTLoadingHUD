@@ -39,7 +39,7 @@
             break;
         case YSTLoadingIndicatorStyle_Alert:
             //警告提示的样式
-            [YSTLoadingHUD showAlertWithStatus:@"无定位权限，请在设置中手动开启！鼎折覆餗似睡非睡是否是水电费水电费是四川省地方的司法所发生行政村正常大哥大哥是否是是否水电费是否第三帝国飞哥梵蒂冈地方郭德纲司法所发生"];
+            [YSTLoadingHUD showAlertWithStatus:@"无定位权限，请在设置中手动开启！"];
             break;
             
         default:
